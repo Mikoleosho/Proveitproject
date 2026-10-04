@@ -1,0 +1,18 @@
+{
+  "name": "inbox-desk",
+  "version": "1.0.0",
+  "description": "AI inbox triage + CRM reconciliation for small bookkeeping firms",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "triage": "node src/cli.js triage",
+    "start": "node src/server.js",
+    "eval": "node src/eval.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "zod": "^3.25.0"
+  }
+}

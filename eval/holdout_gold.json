@@ -1,0 +1,11 @@
+{
+  "_note": "Held-out set, written and labeled before any engine was run on it. As of Thursday 2024-05-02.",
+  "h01": { "client_id": "1002", "intent": ["payment_notice", "billing_dispute"], "urgency": ["normal", "high"], "deadline": null, "owner_review": true },
+  "h02": { "client_id": "1001", "intent": ["document_followup"], "urgency": ["high", "critical"], "deadline": null, "owner_review": null },
+  "h03": { "client_id": null, "intent": ["new_client_inquiry"], "urgency": ["normal", "high"], "deadline": ["2024-05-07", "2024-06-01", null], "owner_review": null },
+  "h04": { "client_id": "1003", "intent": ["deliverable_request"], "urgency": ["high", "critical"], "deadline": "2024-05-06", "owner_review": null },
+  "h05": { "client_id": "1015", "intent": ["new_client_inquiry", "deliverable_request", "other"], "urgency": ["critical", "high"], "deadline": "2024-05-10", "owner_review": null },
+  "h06": { "client_id": ["1010", null], "intent": ["other"], "urgency": ["low", "normal"], "deadline": ["2024-05-09", null], "owner_review": null },
+  "h07": { "client_id": "1008", "intent": ["client_sending_docs", "deliverable_request", "out_of_scope"], "urgency": ["critical", "high"], "deadline": "2024-05-06", "owner_review": null },
+  "h08": { "client_id": "1009", "intent": ["billing_dispute", "client_sending_docs"], "urgency": ["high", "normal"], "deadline": null, "owner_review": true }
+}

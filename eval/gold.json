@@ -1,0 +1,17 @@
+{
+  "_note": "Hand-labeled by reading each email as the firm owner, as of Thursday 2024-05-02. Lists mean any of these is a defensible answer.",
+  "email_01": { "client_id": "1001", "intent": ["document_followup"], "urgency": ["high", "critical"], "deadline": null, "owner_review": null },
+  "email_02": { "client_id": "1002", "intent": ["billing_dispute"], "urgency": ["high"], "deadline": null, "owner_review": true },
+  "email_03": { "client_id": "1003", "intent": ["deliverable_request"], "urgency": ["critical"], "deadline": "2024-05-02", "owner_review": null },
+  "email_04": { "client_id": "1004", "intent": ["contract_change"], "urgency": ["normal"], "deadline": null, "owner_review": null },
+  "email_05": { "client_id": "1005", "intent": ["referral", "new_client_inquiry"], "urgency": ["high", "normal"], "deadline": ["2024-05-03", null], "owner_review": null },
+  "email_06": { "client_id": "1006", "intent": ["billing_dispute"], "urgency": ["critical"], "deadline": "2024-05-03", "owner_review": true },
+  "email_07": { "client_id": "1007", "intent": ["document_followup"], "urgency": ["normal", "low"], "deadline": null, "owner_review": null },
+  "email_08": { "client_id": "1008", "intent": ["client_sending_docs", "deliverable_request"], "urgency": ["critical", "high"], "deadline": "2024-05-03", "owner_review": null },
+  "email_09": { "client_id": "1009", "intent": ["scheduling"], "urgency": ["high", "normal"], "deadline": null, "owner_review": null },
+  "email_10": { "client_id": "1010", "intent": ["onboarding_issue"], "urgency": ["normal", "high"], "deadline": null, "owner_review": null, "pii": "47-1839204" },
+  "email_11": { "client_id": "1011", "intent": ["payment_notice"], "urgency": ["low", "normal"], "deadline": null, "owner_review": null },
+  "email_12": { "client_id": "1012", "intent": ["out_of_scope", "deliverable_request"], "urgency": ["normal", "high"], "deadline": null, "owner_review": null },
+  "email_13": { "client_id": "1013", "intent": ["new_client_inquiry"], "urgency": ["normal"], "deadline": null, "owner_review": null },
+  "email_14": { "client_id": "1014", "intent": ["new_client_inquiry"], "urgency": ["normal", "high"], "deadline": "2024-10-15", "owner_review": null }
+}

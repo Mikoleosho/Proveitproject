@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inbox Desk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23f4efe3'/><path d='M7 10h18M7 16h18M7 22h11' stroke='%231d2a24' stroke-width='2'/><circle cx='24' cy='22' r='3' fill='%23b4232c'/></svg>" />
+</head>
+<body>
+  <header class="top">
+    <div class="top-left">
+      <h1 id="greeting">Loading your inbox…</h1>
+      <div class="progress" id="progress" hidden><div class="bar"><span id="bar"></span></div><span id="progress-text"></span></div>
+    </div>
+    <div class="top-right">
+      <button class="btn ghost" id="btn-add">Add an email</button>
+      <details class="menu">
+        <summary class="btn ghost icon" aria-label="More">⋯</summary>
+        <div class="menu-list">
+          <button data-action="crm">CRM updates</button>
+          <a href="/out/brief.md" download>Download today's summary</a>
+          <button data-action="rerun">Re-check all emails</button>
+          <div class="menu-note" id="engine-note"></div>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <main class="layout" id="layout">
+    <nav class="list" id="list" aria-label="Emails"></nav>
+    <article class="email" id="email" tabindex="-1" aria-live="polite"></article>
+  </main>
+
+  <dialog id="add-dialog" aria-labelledby="add-title">
+    <form method="dialog" id="add-form">
+      <h2 id="add-title">Add an email</h2>
+      <p class="muted">Copy the whole email from your mail app and paste it here.</p>
+      <label class="sr" for="add-text">Email</label>
+      <textarea id="add-text" rows="10" spellcheck="false" placeholder="From: Jane Doe <jane@acmeplumbing.com>
+Subject: quick question
+
+Can you send last month's P&L before my bank meeting on Tuesday?"></textarea>
+      <div class="error" id="add-error" role="alert"></div>
+      <div class="dialog-actions">
+        <button class="btn ghost" value="cancel" formnovalidate>Cancel</button>
+        <button class="btn" id="add-submit" value="default">Add</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="crm-dialog" aria-labelledby="crm-title">
+    <form method="dialog" id="crm-form"></form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><span id="toast-text"></span><button type="button" class="toast-btn" id="toast-btn" hidden></button></div>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

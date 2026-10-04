@@ -1,0 +1,22 @@
+{
+  "firm_name": "Northstar Bookkeeping",
+  "owner_name": "Alex",
+  "location": "Twin Cities, MN",
+  "services": [
+    "monthly bookkeeping and reconciliations",
+    "catch-up / cleanup bookkeeping",
+    "financial statements (P&L, balance sheet) for lenders",
+    "payroll",
+    "business tax prep and extensions",
+    "QuickBooks Online setup and cleanup"
+  ],
+  "not_offered": [
+    "insurance loss runs (those come from the insurance carrier or agency management system, not the bookkeeper)"
+  ],
+  "payment_methods": ["credit/debit card", "ACH bank transfer", "Zelle"],
+  "monthly_reports_schedule": "Monthly reports go out by the 10th of the following month.",
+  "pricing_policy": "We don't quote prices over email. Offer a free 20-minute discovery call and a fixed-fee quote after we see the books.",
+  "booking_link": "https://cal.example.com/northstar/discovery",
+  "billing_policy": "Only the owner can approve refunds or invoice adjustments. Staff acknowledge, investigate, and give a date for an answer.",
+  "tone": "Warm, plain-spoken, brief. No corporate filler. Own mistakes without groveling."
+}
